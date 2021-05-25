@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task:1 Create website using html table tag and div tag</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    function scrollto(div)
+    {
+        $('html','body').animate(
+            {
+                scrollTop:$("#"+div).offset().top
+            },'1000');
+        return false;
+    }
+</script>
+   <style>
+ul
+{
+    list-style-type: disc;
+    margin:0;
+    padding:1;
+    width: 100%;
+
+}
+li
+{
+    display: inline;
+    color: white;
+    
+}
+li a
+{
+    text-align: center;
+    display: inline-block;
+    padding:  0px 20px 20px 150px;
+    font-size: 200%;
+    color: white;
+}
+a:hover
+{
+    color: tomato;
+}
+#home,#about,#contact
+{
+ margin-top:100px;
+ width:90%;
+ height:300px;
+ margin-left:5%;
+ padding:50px;
+ box-sizing:border-box;
+ background-color:#084B8A;
+ font-size:15px;
+ border-radius:10px;
+ color:white;
+}
+    </style>
+</head>
+<body style="background-color: grey; margin:0;" class="container">
+    <div class="container"style="background-color: black;margin:0 0px  50px 175px; height: 100%;width: 85%;">
+        <div>
+        <img src="aakashtechnolabs.jpg" width="70%" height="70%" style="margin-top :-120px; margin-left: 13%;">
+        </div>
+        <div>
+            <nav>
+                <ul style="margin: 0;">
+                    <li>
+                        <a  href="#home" style="text-decoration: none;" onclick="scrollto('home');"> Home </a>
+                    </li>
+                    <li>
+                        <a href="#about" style="text-decoration: none;" onclick="scrollto('about');"> About </a>
+                    </li>
+                    <li>
+                        <a href="#contact" style="text-decoration: none;" onclick="scrollto('contact');"> Contact </a>
+                    </li>
+                </ul>
+            </nav>
+    </div>
+    <div id="home">
+           Welcome to Website
+    </div>
+    <div id="about">
+        <p>Akash Technolabs, as a website development company holds a reputed image among our contemporaries. <br></p>
+            <p>We assure to the best services to our clients for all the work they are dependent on us. <br></p>
+                <p>Website Development by our firm is completely original and unique. <br></p>
+                    <p> We have professionals working for our clients’ website development projects that are relied upon us. <br> </p>
+                        <p>We care for the trust that our clients have in us and so we assure you to keep our quality up to the mark. <br> </p>
+                            <p>We work on various website development projects on an international level too.</p>
+    </div>
+    <div id="contact">
+        <table class="table table-bordered">
+            <tr>
+            <th>
+               Address
+            </th>
+            <th>
+                Phone
+            </th>
+            <th>
+                Email ID
+            </th>
+            <th>
+                Office Hours
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <address>
+                    202 Aarya Arcade Above Passport Seva Kendra, Mithakhali Six Rd, near Shree Krishana Center, Navrangpura, Ahmedabad, Gujarat 380009
+                </address>
+            </td>
+            <td>
+                +91 1234567890
+            </td>
+            <td>
+                info@aakashsir.com
+            </td>
+            <td>
+                Mon - Sat, 10:00 AM To 7:00 PM IST
+            </td>
+        </tr>
+
+        </table>
+    </div>
+    <br>
+    <br><br>
+   
+    
+    <footer>
+        <p align="center" style="color:white;"> Made with ♡ By 𝒰ℳ𝒜𝒩𝒢  ℳ.  𝒫𝒜𝒩𝒞ℋ𝒜ℒ </p> 
+      </footer>
+</div>
+<div>
+
+
+</div>
+</body>
+</html>
