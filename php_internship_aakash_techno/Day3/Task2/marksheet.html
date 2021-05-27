@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Day-3: Task-2 Student Marksheet</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2 align="center">Student Mark Entry</h2>
+        <form method="Post" action="marksheet-1.php">
+            <div class="form-group">
+                <label>Name:</label>
+                <input type="text" name="name" class="form-control" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group" <label>Roll Number:</label>
+                <input type="number" class="form-control" placeholder="Enter Your Roll Number" name="roll">
+            </div>
+            <div class="form-group">
+                <label>Maths Marks:</label>
+                <input type="number" placeholder="Enter Your Maths Subject Marks" min="0" max="100" class="form-control" name="maths">
+            </div>
+            <div>
+                <label>Science Marks:</label>
+                <input type="number" name="science" class="form-control" min="0" max="100" placeholder="Enter Your Science Subject Marks">
+            </div>
+            <div class="form-group">
+                <label>Gujarati Marks:</label>
+                <input type="number" name="gujarati" class="form-control" min="0" max="100" placeholder="Enter Your Gujarati Subject Marks">
+            </div>
+            <div class="form-group">
+                <label>Social Science Marks:</label>
+                <input type="number" name="social_science" class="form-control"
+                min="0" max="100" placeholder="Enter Your Social Science Subject Marks">
+            </div>
+            <div class="form-group">
+                <label>English Marks:</label>
+                <input type="number" name="english" class="form-control"  min="0" max="100" placeholder="Enter Your English Subject Marks">
+            </div>
+
+            <input type="submit" name="submit" class="btn btn-primary" value="submit">
+        </form>
+    </div>
+</body>
+
+</html>
