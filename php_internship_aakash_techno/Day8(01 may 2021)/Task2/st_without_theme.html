@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+</head>
+
+<body>
+
+    <table border="2">
+        <form action="st_without_theme.php" method="post">
+        <tr>
+            <td colspan="2">
+                <h2 align="center">Student Registration</h2>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Name:
+            </td>
+            <td>
+                <input type="text" name="name" placeholder="Enter Your Name" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Gender:
+            </td>
+            <td>
+                <input type="radio" name="gender1" value="male" required> Male
+                <input type="radio" name="gender1" value="female" required> Female
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Date Of Birth:
+            </td>
+            <td>
+                <input type="date" name="dob" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Email:
+            </td>
+            <td>
+                <input type="email" name="email" placeholder="Enter Your Email ID" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Phone Number:
+            </td>
+            <td>
+                <input type="number" name="phone" maxlength="10" placeholder="Enter Your Phone Number" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Address:
+            </td>
+            <td>
+                <textarea name="address" cols="30" rows="5" placeholder="Enter Your Address" required></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Area:
+            </td>
+            <td>
+                <select name="state" required>
+                    <option value="">select</option>
+                    <option value="GJ">Gujarat</option>
+                    <option value="MH">Maharastra</option>
+                    <option value="GA">Goa</option>
+                    <option value="RJ">Rajsthan</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Pincode:
+            </td>
+            <td>
+                <input type="number" name="pincode" maxlength="6" placeholder="Enter Your Pincode" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Bloodgroup:
+            </td>
+            <td>
+                <select name="blood" required>
+                    <option value="">select</option>
+                    <option value="a_positive">A+</option>
+                    <option value="a_negative">A-</option>
+                    <option value="b_positive">B+</option>
+                    <option value="b_negative">B-</option>
+                    <option value="ab_positive">AB+</option>
+                    <option value="ab_negative">AB-</option>
+                    <option value="o_positive">O+</option>
+                    <option value="o_negative">O-</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Password:
+            </td>
+            <td>
+                <input type="password" name="password" maxlength="8" placeholder="Enter Your Password" required>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2">
+                <input type="submit" name="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </td>
+        </tr>
+    </form>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <form action="st_with_theme.php" method="post">
+  
+    <h1>Sign Up</h1>
+    
+    <fieldset>
+      <label for="name">Name:</label>
+      <input type="text" placeholder="Enter Your Name" required name="name">
+
+      <label>Gender:</label>
+      <input type="radio" name="gender1" value="male" required> Male
+      <input type="radio" name="gender1" value="female" required> Female <br> <br>
+      
+      <label>Date:</label>
+      <input type="date"  name="dob" required>
+
+      <label>Email:</label>
+      <input type="email" placeholder="Enter Your Email ID" required name="email">
+
+      <label>Phone:</label>
+      <input type="number" placeholder="Enter Your Phone Number" required name="phone">
+
+      <label>Address:</label>
+      <textarea name="address" cols="30" rows="5" placeholder="Enter Your Address" required></textarea>
+
+        <label>Area:</label>
+        <select name="state" required>
+            <option value="">select</option>
+            <option value="GJ">Gujarat</option>
+            <option value="MH">Maharastra</option>
+            <option value="GA">Goa</option>
+            <option value="RJ">Rajsthan</option>
+        </select>
+
+        <label>Pincode:</label>
+      <input type="number" placeholder="Enter Your Pin code" required name="pincode">
+
+      <label>Bloodgroup:</label>
+      <select name="blood" required>
+        <option value="">select</option>
+        <option value="a_positive">A+</option>
+        <option value="a_negative">A-</option>
+        <option value="b_positive">B+</option>
+        <option value="b_negative">B-</option>
+        <option value="ab_positive">AB+</option>
+        <option value="ab_negative">AB-</option>
+        <option value="o_positive">O+</option>
+        <option value="o_negative">O-</option>
+    </select>
+
+      <label for="password">Password:</label>
+      <input type="password" name="password" placeholder="Enter Your Password" required>
+      
+     
+    </fieldset>
+    
+    
+    <button type="submit" name="submit">Sign Up</button>
+  </form>
+  
+</body>
+</html>
